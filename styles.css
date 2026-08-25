@@ -190,6 +190,16 @@ section h2 {
     transform: translateY(-5px);
 }
 
+.tecnologias {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.3rem 0.8rem;
+    background: #667eea;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
 footer {
     background: #333;
     color: white;
