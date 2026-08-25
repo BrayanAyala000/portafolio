@@ -119,6 +119,28 @@ nav {
     margin-bottom: 2rem;
 }
 
+.typing-text {
+    overflow: hidden;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    animation: typing 3s steps(20) infinite, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    0%, 90%, 100% {
+        width: 0;
+    }
+    30%, 60% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .btn {
     display: inline-block;
     background: white;
