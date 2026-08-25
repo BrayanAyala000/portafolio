@@ -61,5 +61,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Menú hamburguesa
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', function() {
+        navLinksContainer.classList.toggle('active');
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinksContainer.classList.remove('active');
+        });
+    });
+
     console.log('Portafolio cargado correctamente');
 });
