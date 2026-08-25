@@ -55,6 +55,13 @@ nav {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
 }
 
 .nav-links a:hover {

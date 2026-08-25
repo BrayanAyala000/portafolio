@@ -39,5 +39,27 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
 
+    // Indicador de sección activa
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', function() {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+
     console.log('Portafolio cargado correctamente');
 });
