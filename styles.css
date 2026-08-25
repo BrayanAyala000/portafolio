@@ -5,9 +5,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -95,6 +96,32 @@ section h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
+    color: #333;
+}
+
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.habilidad h3 {
+    margin-bottom: 0.5rem;
+}
+
+.barra {
+    background: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progreso {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    height: 100%;
+    transition: width 1s ease-in-out;
 }
 
 .proyectos-grid {
