@@ -11,6 +11,17 @@ body {
     scroll-behavior: smooth;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 header {
     background: #333;
     color: white;
@@ -90,6 +101,7 @@ section {
     padding: 5rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    animation: fadeIn 0.8s ease-out;
 }
 
 section h2 {
